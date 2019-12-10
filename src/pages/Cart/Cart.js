@@ -38,6 +38,7 @@ const Cart = ({
 
   const changeRoute = () => {
     history.push("/thank-you");
+    handleAllItemsRemove();
   };
 
   return (
