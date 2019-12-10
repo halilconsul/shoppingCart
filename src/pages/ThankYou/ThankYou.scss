@@ -1,0 +1,17 @@
+@import "../../variables/index.scss";
+
+.thankYou {
+  padding-left: $padding-lg;
+
+  .thankYou__title {
+    margin-bottom: $margin-lg;
+    padding-top: $padding-lg;
+    font-size: $font-xxl;
+    font-weight: 300;
+  }
+
+  .thankYou__text {
+    font-size: $font-lg;
+    font-weight: 300;
+  }
+}

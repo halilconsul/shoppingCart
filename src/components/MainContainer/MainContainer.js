@@ -4,6 +4,7 @@ import ItemDescription from "../../pages/ItemDescription/ItemDescription";
 import Cart from "../../pages/Cart/Cart";
 import ItemsList from "../../pages/ItemsList/ItemList";
 import Home from "../../pages/Home/Home";
+import ThankYou from "../../pages/ThankYou/ThankYou";
 import NotFoundPage from "../NotFoundPage/NotFoundPage";
 
 import styles from "./MainContainer.scss";
@@ -15,6 +16,7 @@ const MainContainer = () => (
       <Route exact path="/items" component={ItemsList} />
       <Route path="/items/:itemId" component={ItemDescription} />
       <Route path="/cart" component={Cart} />
+      <Route path="/thank-you" component={ThankYou} />
       <Route component={NotFoundPage} />
     </Switch>
   </div>

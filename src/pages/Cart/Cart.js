@@ -13,7 +13,13 @@ import {
   removeAllItems
 } from "../../actions/cart";
 
-const Cart = ({ selectedItems, totalPrice, totalQuantity, dispatch }) => {
+const Cart = ({
+  selectedItems,
+  totalPrice,
+  totalQuantity,
+  dispatch,
+  history
+}) => {
   const handleItemAdd = itemId => () => {
     dispatch(addItem(itemId));
   };
@@ -28,6 +34,10 @@ const Cart = ({ selectedItems, totalPrice, totalQuantity, dispatch }) => {
 
   const handleAllItemsRemove = () => {
     dispatch(removeAllItems());
+  };
+
+  const changeRoute = () => {
+    history.push("/thank-you");
   };
 
   return (
@@ -63,7 +73,7 @@ const Cart = ({ selectedItems, totalPrice, totalQuantity, dispatch }) => {
         <div className={styles.cartComponent__info}>
           <TotalResults totalPrice={totalPrice} totalQuantity={totalQuantity} />
           <div className={styles.itemDescription__addToCartContainer}>
-            <Button size={"md"} disabled={!totalQuantity}>
+            <Button size={"md"} disabled={!totalQuantity} onClick={changeRoute}>
               Buy
             </Button>
           </div>
