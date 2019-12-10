@@ -1,1 +1,4 @@
 # itemsList
+
+#yarn
+#yarn dev
