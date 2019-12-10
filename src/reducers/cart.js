@@ -36,11 +36,7 @@ const cart = (state = {}, action) => {
     case REMOVE_ITEM: {
       const { [action.itemId]: target, ...savedItems } = state;
 
-      // const cloneState = { ...state };
-      // delete cloneState[action.itemId];
-
       return {
-        // ...cloneState
         ...savedItems
       };
     }
