@@ -1,0 +1,12 @@
+@import "../../variables/index.scss";
+
+.cartComponent__text {
+  &:not(:last-child) {
+    margin-bottom: $margin-sm;
+  }
+}
+.cartComponent__value {
+  margin-left: $margin-xs;
+  font-size: $font-md;
+  font-weight: bold;
+}

@@ -1,0 +1,37 @@
+@import "../../variables/index.scss";
+
+.header__searchContainer {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+  flex-grow: 1;
+
+  @media screen and (max-width: $mobile-res) {
+    display: none;
+  }
+
+  .header__searchBlock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    border: 1px solid $light-gray;
+    border-right: none;
+    cursor: pointer;
+
+    @media screen and (max-width: $mobile-res) {
+      border: none;
+    }
+  }
+
+  .header__searchInput {
+    width: 100%;
+    padding: $padding-sm $padding-md;
+    border: 1px solid $light-gray;
+    outline: none;
+
+    @media screen and (max-width: $mobile-res) {
+      display: none;
+    }
+  }
+}

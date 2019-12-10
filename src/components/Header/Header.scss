@@ -1,0 +1,107 @@
+@import "../../variables/index.scss";
+
+.header__container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 60px;
+  padding-left: $padding-sm;
+  padding-right: $padding-sm;
+  border: 1px solid $light-gray;
+  background: $text-light;
+
+  @media screen and (max-width: $mobile-res) {
+    flex-direction: column-reverse;
+    border: none;
+    background-color: $bg-yellow;
+  }
+
+  .header__side {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+
+    @media screen and (max-width: $mobile-res) {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 9;
+    }
+
+    &:last-child {
+      @media screen and (max-width: $mobile-res) {
+        justify-content: flex-end;
+      }
+    }
+
+    .imageContainer {
+      padding: $padding-md $padding-lg;
+
+      .logo {
+        font-size: $font-xl;
+        cursor: pointer;
+      }
+    }
+    .header__cartContainer {
+      position: relative;
+      margin-left: $margin-md;
+      margin-right: $margin-md;
+      flex-shrink: 0;
+
+      @media screen and (max-width: $mobile-res) {
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 9;
+        margin: 0;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        text-align: center;
+        background-color: $bg-yellow;
+      }
+
+      .cartIcon {
+        font-size: $font-md;
+        cursor: pointer;
+      }
+
+      .cartItems {
+        position: absolute;
+        top: -5px;
+        left: 15px;
+        padding: 0 2px;
+        height: 16px;
+        min-width: 16px;
+        border-radius: 50%;
+        box-sizing: border-box;
+        line-height: 16px;
+        text-align: center;
+        font-size: $font-xs;
+        color: $text-light;
+        background: $bg-red;
+
+        @media screen and (max-width: $mobile-res) {
+          top: 7px;
+          left: 23px;
+        }
+      }
+    }
+    .menu__container {
+      flex-grow: 1;
+
+      @media screen and (max-width: $mobile-res) {
+        flex-grow: 0;
+      }
+    }
+  }
+}

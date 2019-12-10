@@ -1,0 +1,15 @@
+@import "../../variables/index.scss";
+
+.homePage {
+  padding: $padding-lg;
+  .homePage__title {
+    margin-bottom: $margin-md;
+    font-size: $font-xl;
+    font-weight: 300;
+  }
+  .homePage__text {
+    margin-bottom: $margin-md;
+    font-size: $font-lg;
+    font-weight: 300;
+  }
+}

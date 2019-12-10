@@ -1,0 +1,17 @@
+@import "../../variables/index.scss";
+
+.filters {
+  // flex-shrink: 0;
+  min-width: 275px;
+  height: 800px;
+  background-color: $light-gray;
+  @media screen and (max-width: $tablet-res) {
+    width: 100%;
+    height: auto;
+  }
+  .filters_title {
+    text-align: center;
+    font-size: $font-md;
+    font-weight: normal;
+  }
+}

@@ -1,0 +1,9 @@
+@import "../../variables/index.scss";
+
+.MainContainer {
+  margin-top: 70px;
+
+  @media screen and (max-width: $mobile-res) {
+    margin-top: 60px;
+  }
+}

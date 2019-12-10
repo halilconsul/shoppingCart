@@ -1,0 +1,25 @@
+@import "../../variables/index.scss";
+
+.notFoundPage {
+  padding: $padding-xl;
+  text-align: center;
+  font-weight: 300;
+  color: $text-dark;
+  @media screen and (max-width: $mobile-res) {
+    padding: $padding-xl $padding-sm;
+  }
+  .notFoundPage__title {
+    margin-bottom: $margin-md;
+    font-size: $font-xxl;
+    font-weight: 300;
+    @media screen and (max-width: $mobile-res) {
+      font-size: $font-lg;
+    }
+  }
+  .notFoundPage__text {
+    font-size: $font-lg;
+    @media screen and (max-width: $mobile-res) {
+      font-size: $font-md;
+    }
+  }
+}

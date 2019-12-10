@@ -1,0 +1,10 @@
+@import "../../variables/index.scss";
+
+.itemList {
+  display: flex;
+  justify-content: space-between;
+
+  @media screen and (max-width: $tablet-res) {
+    flex-direction: column;
+  }
+}

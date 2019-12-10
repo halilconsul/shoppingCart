@@ -1,0 +1,36 @@
+@import "../../variables/index.scss";
+
+.counter {
+  display: flex;
+  width: 100px;
+  &__dec {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  &__inc {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  &__dec,
+  &__inc {
+    width: 30px;
+    height: 30px;
+    border: 1px solid $light-gray;
+    outline: none;
+    cursor: pointer;
+    background: aliceblue;
+    &:hover {
+      background: #76ddfe;
+    }
+    &:disabled {
+      background: #dcdcdc;
+    }
+  }
+  &__input {
+    width: 50px;
+    border: 1px solid $light-gray;
+    text-align: center;
+    font-size: $font-lg;
+    font-weight: 300;
+  }
+}

@@ -1,0 +1,34 @@
+@import "../../variables/index.scss";
+
+.btn {
+  width: 100%;
+  border: none;
+  border-radius: 2px;
+  outline: none;
+  background: $btn-base-bg-color;
+  color: $text-light;
+  cursor: pointer;
+
+  &:hover {
+    background: $btn-hover-bg-color;
+  }
+
+  &:disabled {
+    background: $btn-disabled-bg-color;
+  }
+
+  &_sm {
+    padding: $padding-xs $padding-md;
+    font-size: $font-md;
+  }
+
+  &_md {
+    padding: $padding-md $padding-lg;
+    font-size: $font-lg;
+  }
+
+  &_lg {
+    padding: $padding-lg $padding-xl;
+    font-size: $font-lg;
+  }
+}
